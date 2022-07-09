@@ -317,10 +317,10 @@
 
     <footer class="page-footer">
       <div class="container container-footer">
-        <div>
+        <div class="footer-contacts">
           <a class="logo-footer logo link" href="./index.html"
-            >Web<span class="studio-footer">Studio</span></a
-          >
+            >Web<span class="studio-footer">Studio</span>
+          </a>
           <address class="company-address">
             <ul class="list">
               <li class="contact-item">
@@ -329,13 +329,14 @@
                   href="https://goo.gl/maps/qAztw9pVadm1YtcE8"
                   target="_blank"
                   rel="noopener noreferrer"
-                  >Киев, пр-т Леси Украинки, 26</a
                 >
+                  Киев, пр-т Леси Украинки, 26
+                </a>
               </li>
               <li class="contact-item">
                 <a class="contacts-footer link" href="mailto:info@devstudio.com"
-                  >info@devstudio.com</a
-                >
+                  >info@devstudio.com
+                </a>
               </li>
               <li class="contact-item">
                 <a class="contacts-footer link" href="tel:+380961111111">+38 096 111 11 11</a>
@@ -343,7 +344,7 @@
             </ul>
           </address>
         </div>
-        <div>
+        <div class="footer-social">
           <h3 class="footer-social-title">присоединяйтесь</h3>
           <ul class="footer-social-media list">
             <li class="footer-social-media-item">
@@ -399,6 +400,22 @@
               </a>
             </li>
           </ul>
+        </div>
+        <div>
+          <h3 class="footer-send-title">Подпишитесь на рассылку</h3>
+          <form>
+            <div class="subscription-field">
+              <label class="subscription-label">
+                <input class="subscription-input" type="email" name="email" placeholder="E-mail" />
+              </label>
+              <button class="subscription-btn" type="submit">
+                Подписаться
+                <svg class="subscription-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-send"></use>
+                </svg>
+              </button>
+            </div>
+          </form>
         </div>
       </div>
     </footer>
