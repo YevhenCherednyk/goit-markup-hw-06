@@ -674,12 +674,8 @@ img {
     color: var(--decoration-text-color);
 }
 
-.footer-social{
-    margin-right: 93px;
-}
-
 .footer-social-title,
-.footer-send-title{
+.subscription-title{
     margin-bottom: 20px;
     
     font-size: 14px;
@@ -730,6 +726,10 @@ img {
     fill: currentColor;
 }
 
+.subscription{
+    margin-left: auto;
+}
+
 .subscription-field{
     display: flex;
     gap: 12px;
@@ -761,7 +761,7 @@ img {
 
 .subscription-input:hover,
 .subscription-input:focus{
-    border-color: var(--decoration-text-color);
+    border-color: var(--light-text-color);
     outline: transparent;
 }
 
@@ -973,6 +973,7 @@ textarea::placeholder{
     transition: background-color var(--animation), outline-color var(--animation), filter var(--animation);
 }
 
+
 .form-checkbox-input:checked + .custom-checkbox {
     background-color: var(--decoration-text-color);
     outline-color: transparent;
@@ -983,9 +984,6 @@ textarea::placeholder{
     fill: var(--light-text-color);
 }
 
-.custom-checkbox-input:focus{
-   border-color: var(--decoration-text-color);
-}
 
 .form-checkbox-agreement{
     letter-spacing: 0.03em;
