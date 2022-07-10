@@ -842,6 +842,12 @@ img {
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
 }
+
+.register-form {
+    display: inline-flex;
+    flex-direction: column;
+}
+
 .modal-title{
     margin-bottom: 12px;
 
@@ -852,32 +858,26 @@ img {
     color: var(--secondary-text-color);
 }
 
-.register-form{
-    display: flex;
-    flex-direction: column;
-    align-items: center;  
-}
-
-.form-label{
-    position: relative;
-    display: flex;
-    flex-direction: column;
-
-    width: 100%;
+.form-field{
     margin-bottom: 10px;
 }
 
-
-.form-label-name{
+.form-label{
+    display: block;
+    
     margin-bottom: 4px;
     
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.01em;
-   
+}
+
+.form-box{
+    position: relative;
 }
 
 .form-input{
+    width: 100%;
     height: 40px;
    
     padding: 0 8px 0 41px; 
@@ -896,21 +896,26 @@ img {
     position: absolute;
     top: 50%;
     left: 12px;
-
+    transform: translateY(-50%);
+   
     transition: fill var(--animation);
 }
 
 .form-input:hover,
 .form-input:focus,
-.form-input:hover+.form-icon,
-.form-input:focus+.form-icon {
+.form-input:hover + .form-icon,
+.form-input:focus + .form-icon {
     border-color: var(--decoration-text-color);
     outline: transparent;
     fill: var(--decoration-text-color);
 }
 
-.textarea-label{
-    width: 100%;
+.form-label-name{
+    margin-bottom: 4px;
+
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
 }
 
 textarea{
@@ -947,7 +952,10 @@ textarea::placeholder{
 .form-checkbox{
     display: flex;
     align-items: center;
+    justify-content: center;
     margin-bottom: 30px;
+
+    
 }
 
 .custom-checkbox{
@@ -962,7 +970,7 @@ textarea::placeholder{
     outline-offset: -1.5px;
     border-radius: 2px;
 
-    transition: background-color var(--animation), outline-color var(--animation), filter var(--animation)
+    transition: background-color var(--animation), outline-color var(--animation), filter var(--animation);
 }
 
 .form-checkbox-input:checked + .custom-checkbox {
@@ -973,6 +981,10 @@ textarea::placeholder{
 
 .custom-checkbox-icon{
     fill: var(--light-text-color);
+}
+
+.custom-checkbox-input:focus{
+   border-color: var(--decoration-text-color);
 }
 
 .form-checkbox-agreement{
