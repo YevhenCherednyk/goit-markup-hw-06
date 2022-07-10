@@ -1003,7 +1003,9 @@ textarea::placeholder{
 
 .send-btn { 
     min-width: 200px;
-    height: 50px;  
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;  
     padding: 10px 55px 10px 56px; 
 
     font-size: 16px;
